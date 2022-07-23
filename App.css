@@ -1,0 +1,19 @@
+/* 
+  In object in the js file we follow camelcase but here we dont since no longer objects
+  Also we replace the, with ; and remove all ' '
+*/
+
+
+.App{
+  text-align: center;
+}
+
+.styles{
+  height: 200px;
+  margin: 10px 30px;
+  border-radius: 30px;
+  box-shadow : 15px 10px 10px 5px #C0C0C0;
+  padding: 25px;
+  box-sizing : border-box;
+  text-align: center;
+}

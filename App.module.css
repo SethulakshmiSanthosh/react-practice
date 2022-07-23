@@ -1,0 +1,45 @@
+/* A css module file is converted to compiled css file where each class of css modulefile is converted as 
+such as being described using the file name, class name and an offset number .
+This is done by the css modules compiler which also creates a javascript file for the same with objects.
+
+A CSS Module is a CSS file in which all class names and animation names are scoped locally by default.
+
+CSS Modules let you write styles in CSS files but consume them as JavaScript objects for additional processing 
+and safety. CSS Modules are very popular because they automatically make class and animation names unique so
+you don’t have to worry about selector name collisions.
+
+In this example the same div object is repeated all with the same classname ..but upon using css module files
+we are having all these div as instances or objectsof class each with a unique name identified in the format 
+of file name, class name, and an offset number which varies for every object. */
+
+
+/* To create responsive designs we use media queries which is supported in module css files */
+.App {
+    text-align: center;
+}
+
+.styles {
+    height: 300px;
+    margin: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 5px #C0C0C0;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.styles > button{
+    font-size: large;
+}
+
+.likecount{
+    text-align: center;
+    font-size: large;
+    font-weight: 1000;
+}
+/*adding mediaqueries for resposive design for each object from styles class(here, as of now) eheeeee*/
+@media (min-width : 992px){ /*for small devices */
+.styles{
+    width: 40%;
+    display: inline-block;
+}
+}
